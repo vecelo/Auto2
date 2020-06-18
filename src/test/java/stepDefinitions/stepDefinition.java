@@ -1,9 +1,13 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.And;
+//import io.cucumber.java.en.And;
+//import io.cucumber.java.en.Given;
+//import io.cucumber.java.en.Then;
+//import io.cucumber.java.en.When;
 
 
 public class stepDefinition {
@@ -16,7 +20,7 @@ public class stepDefinition {
     @When("^User login into application with \"([^\"]*)\" and password \"([^\"]*)\"$")
     public void user_login_into_application_with_username_and_password(String a, String b) throws Throwable{
         //code
-        System.out.println("Username is aaa@gmail.com \n Password is 123456");
+        System.out.println("Username is: "+a + "\n" +  "Password is: "+b);
     }
 
     @Then("^Home page is displayed$")
@@ -28,6 +32,6 @@ public class stepDefinition {
     @And("^Portal text is displayed \"([^\"]*)\"$")
     public void portal_text_is_displayed(String c) throws Throwable{
         //code
-        System.out.println("Home Page >>> Portal text");
+        System.out.println("Home Page >>> Portal text. Result: "+c);
     }
 }

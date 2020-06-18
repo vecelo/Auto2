@@ -7,7 +7,7 @@ Feature: Application login
     Then Home page is displayed
     And Portal text is displayed "true"
 
-  Scenario: Homepage default login
+  Scenario: Homepage invalid login
 
     Given User is on Landing page
     When User login into application with "def" and password "456"
