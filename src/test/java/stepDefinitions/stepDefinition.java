@@ -25,8 +25,8 @@ public class stepDefinition {
         System.out.println("Home Page");
     }
 
-    @And("^Portal text is displayed$")
-    public void portal_text_is_displayed() throws Throwable{
+    @And("^Portal text is displayed \"([^\"]*)\"$")
+    public void portal_text_is_displayed(String c) throws Throwable{
         //code
         System.out.println("Home Page >>> Portal text");
     }
