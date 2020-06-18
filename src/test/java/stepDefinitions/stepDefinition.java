@@ -13,8 +13,8 @@ public class stepDefinition {
         System.out.println("Landing page");
     }
 
-    @When("^User login into application with username and password$")
-    public void user_login_into_application_with_username_and_password() throws Throwable{
+    @When("^User login into application with \"([^\"]*)\" and password \"([^\"]*)\"$")
+    public void user_login_into_application_with_username_and_password(String a, String b) throws Throwable{
         //code
         System.out.println("Username is aaa@gmail.com \n Password is 123456");
     }
